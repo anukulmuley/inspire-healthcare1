@@ -55,13 +55,17 @@ public class doctorSide extends AppCompatActivity implements View.OnClickListene
                 startActivity(i);
                 break;
             case R.id.d5:
-                i=new Intent (this,meetings.class);
-                startActivity(i);
+//                i=new Intent (this,meetings.class);
+////                startActivity(i);
+////                break;
+                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://meet.google.com/"));
+                startActivity(browserIntent);
                 break;
+
             case R.id.d6:
 //                i=new Intent (this,medicalOrder.class);
 //                startActivity(i);
-                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.industrybuying.com/"));
+                browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.industrybuying.com/"));
                 startActivity(browserIntent);
                 break;
 

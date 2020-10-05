@@ -22,19 +22,21 @@
         android:layout_width="wrap_content"
         android:layout_height="120dp"
         android:fontFamily="@font/bungee"
-        android:text=" Welcome Back"
+        android:text="THE CARE YOU WANT"
         android:textColor="#000"
         android:textSize="40sp"
-        android:transitionName="logo_text" />
+        android:transitionName="logo_text"
+        android:gravity="center"/>
 
     <TextView
         android:id="@+id/slogan_name"
-        android:layout_width="wrap_content"
+        android:layout_width="370dp"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/bungee"
         android:text="Sign In to continue"
         android:textSize="18sp"
-        android:fontFamily="@font/bungee"
-        android:transitionName="logo_text"/>
+        android:transitionName="logo_text"
+        android:gravity="center"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -48,13 +50,13 @@
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Username">
+            android:hint="Username/HealthID">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/login_username"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Username/HealthID"
+                android:hint=""
                 android:inputType="textEmailAddress" />
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -71,7 +73,7 @@
                 android:id="@+id/login_password"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Password"
+                android:hint=""
                 android:inputType="textPassword"
                 android:transitionName="password_tran" />
         </com.google.android.material.textfield.TextInputLayout>

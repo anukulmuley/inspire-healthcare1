@@ -22,10 +22,11 @@
         android:layout_width="wrap_content"
         android:layout_height="120dp"
         android:fontFamily="@font/bungee"
-        android:text="Hello there, Welcome Back"
+        android:text="Welcome Back Doctor"
         android:textColor="#000"
         android:textSize="40sp"
-        android:transitionName="logo_text" />
+        android:transitionName="logo_text"
+        android:gravity="center"/>
 
     <TextView
         android:id="@+id/slogan_name"
@@ -48,13 +49,13 @@
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Username">
+            android:hint="Username/HealthID">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/doclogin_username"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Username/HealthID"
+                android:hint=""
                 android:inputType="textEmailAddress" />
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -71,7 +72,7 @@
                 android:id="@+id/doclogin_password"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Password"
+                android:hint=""
                 android:inputType="textPassword"
                 android:transitionName="password_tran" />
         </com.google.android.material.textfield.TextInputLayout>
