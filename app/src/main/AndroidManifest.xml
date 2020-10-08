@@ -12,7 +12,12 @@
         android:roundIcon="@mipmap/launcher_icon1"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ViewImageActivity"></activity>
+        <activity android:name=".DiscussionActivity"></activity>
+        <activity android:name=".medicalDetails" />
+        <activity android:name=".treatmentData" />
+        <activity android:name=".clinicalData" />
+        <activity android:name=".patientDetails" />
+        <activity android:name=".ViewImageActivity" />
         <activity android:name=".provideTransaction" />
         <activity android:name=".uploadLabReports" />
         <activity android:name=".uploadPrescription" />

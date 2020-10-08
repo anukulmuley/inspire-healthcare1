@@ -5,12 +5,14 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 
 public class patientSide extends AppCompatActivity implements View.OnClickListener {
     public CardView card1,card2,card3,card4,card5,card6;
+    Button livechat;
 
 
     @Override
@@ -18,6 +20,20 @@ public class patientSide extends AppCompatActivity implements View.OnClickListen
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_patient_side);
         getSupportActionBar().hide();
+
+        livechat = findViewById(R.id.btn_live_chat);
+
+        livechat.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(patientSide.this,liveChat.class);
+                startActivity(intent);
+            }
+        });
+
+
+
+
 
         card1=(CardView)findViewById(R.id.c1);
         card2=(CardView)findViewById(R.id.c2);
